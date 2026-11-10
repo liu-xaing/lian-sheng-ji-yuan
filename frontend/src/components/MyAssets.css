@@ -1,0 +1,242 @@
+.assets-section {
+  padding: 2rem;
+}
+
+.asset-toolbar {
+  display: flex;
+  align-items: end;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+}
+
+.asset-toolbar label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  color: #a0aec0;
+  font-size: 0.78rem;
+}
+
+.asset-toolbar input,
+.asset-toolbar select {
+  min-width: 150px;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  background: #1a1a2e;
+  color: #e2e8f0;
+  font-size: 0.85rem;
+}
+
+.asset-toolbar input:focus,
+.asset-toolbar select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.asset-result-count {
+  margin-left: auto;
+  padding-bottom: 0.55rem;
+  color: #718096;
+  font-size: 0.82rem;
+}
+
+.assets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.asset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.list-panel {
+  padding: 0 0.2rem;
+}
+
+.list-form {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.list-price-input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  box-sizing: border-box;
+}
+
+.list-price-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.list-form-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-confirm-list {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.btn-confirm-list:hover {
+  transform: translateY(-1px);
+}
+
+.btn-cancel-list {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: transparent;
+  color: #a0aec0;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.btn-cancel-list:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.btn-list {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid rgba(102, 126, 234, 0.5);
+  border-radius: 10px;
+  background: rgba(102, 126, 234, 0.1);
+  color: #667eea;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.btn-list:hover {
+  background: rgba(102, 126, 234, 0.2);
+  transform: translateY(-1px);
+}
+
+.asset-actions {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.asset-actions .btn-list {
+  flex: 1;
+}
+
+.btn-burn {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  border-radius: 10px;
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.btn-burn:hover:not(:disabled) {
+  background: rgba(239, 68, 68, 0.2);
+  transform: translateY(-1px);
+}
+
+.btn-burn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.listed-badge-wrapper {
+  padding: 0 0.2rem;
+}
+
+.listed-badge {
+  display: block;
+  text-align: center;
+  padding: 0.6rem;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: 10px;
+  color: #22c55e;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.assets-loading,
+.assets-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  color: #a0aec0;
+  text-align: center;
+}
+
+.assets-empty .empty-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.assets-empty p {
+  margin: 0.3rem 0;
+}
+
+.empty-hint {
+  font-size: 0.85rem;
+  color: #718096;
+}
+
+.assets-error p {
+  max-width: 560px;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .assets-section {
+    padding: 1.25rem;
+  }
+
+  .asset-toolbar {
+    align-items: stretch;
+  }
+
+  .asset-toolbar label,
+  .asset-toolbar input,
+  .asset-toolbar select {
+    width: 100%;
+  }
+
+  .asset-result-count {
+    margin-left: 0;
+  }
+}
